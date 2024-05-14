@@ -1,0 +1,2 @@
+/usr/bin/ar qc libicp_cuda.a CMakeFiles/icp_cuda.dir/icp_cuda.cu.o
+/usr/bin/ranlib libicp_cuda.a

@@ -1,0 +1,7 @@
+/home/ziyang/sdsl-lite/modelnet40/CMakeFiles/TEST.dir
+/home/ziyang/sdsl-lite/modelnet40/CMakeFiles/edit_cache.dir
+/home/ziyang/sdsl-lite/modelnet40/CMakeFiles/rebuild_cache.dir
+/home/ziyang/sdsl-lite/modelnet40/CMakeFiles/list_install_components.dir
+/home/ziyang/sdsl-lite/modelnet40/CMakeFiles/install.dir
+/home/ziyang/sdsl-lite/modelnet40/CMakeFiles/install/local.dir
+/home/ziyang/sdsl-lite/modelnet40/CMakeFiles/install/strip.dir

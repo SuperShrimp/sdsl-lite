@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/registration.dir/main_registration.cpp.o -o registration   -L/usr/local/cuda-12.0/targets/x86_64-linux/lib/stubs  -L/usr/local/cuda-12.0/targets/x86_64-linux/lib  -Wl,-rpath,/home/ziyang/sdsl-lite/icp_src libicp.a libdata_io.so libicp_cuda.a -lcublas -lcusolver -lcudadevrt -lcudart_static -lrt -lpthread -ldl 
