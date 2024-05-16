@@ -169,6 +169,19 @@ registration_demo/fast:
 .PHONY : registration_demo/fast
 
 #=============================================================================
+# Target rules for targets named test
+
+# Build rule for target.
+test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test
+.PHONY : test
+
+# fast build rule for target.
+test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
+.PHONY : test/fast
+
+#=============================================================================
 # Target rules for targets named registration
 
 # Build rule for target.
@@ -301,6 +314,30 @@ main_registration.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/registration.dir/build.make CMakeFiles/registration.dir/main_registration.cpp.s
 .PHONY : main_registration.cpp.s
 
+yzy_io.o: yzy_io.cpp.o
+.PHONY : yzy_io.o
+
+# target to build an object file
+yzy_io.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/yzy_io.cpp.o
+.PHONY : yzy_io.cpp.o
+
+yzy_io.i: yzy_io.cpp.i
+.PHONY : yzy_io.i
+
+# target to preprocess a source file
+yzy_io.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/yzy_io.cpp.i
+.PHONY : yzy_io.cpp.i
+
+yzy_io.s: yzy_io.cpp.s
+.PHONY : yzy_io.s
+
+# target to generate assembly for a file
+yzy_io.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/yzy_io.cpp.s
+.PHONY : yzy_io.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -314,6 +351,7 @@ help:
 	@echo "... icp_cuda"
 	@echo "... registration"
 	@echo "... registration_demo"
+	@echo "... test"
 	@echo "... data_io.o"
 	@echo "... data_io.i"
 	@echo "... data_io.s"
@@ -329,6 +367,9 @@ help:
 	@echo "... main_registration.o"
 	@echo "... main_registration.i"
 	@echo "... main_registration.s"
+	@echo "... yzy_io.o"
+	@echo "... yzy_io.i"
+	@echo "... yzy_io.s"
 .PHONY : help
 
 

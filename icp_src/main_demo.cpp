@@ -42,7 +42,7 @@ int main(int argc, char *argv[]){
     std::random_device rd;
     std::mt19937 gen(rd());
 
-    std::string base_dir = "/media/ziyang/304288214287EA44/icp/modelnet40_normal_resampled/airplane/";
+    std::string base_dir = "/home/ziyang/sdsl-lite/modelnet40/";
     std::string file_name = base_dir + "airplane_0001.txt";
     MatrixXd pcl_data = load_pcl(file_name);
     int num_point = pcl_data.rows();

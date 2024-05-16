@@ -20,11 +20,14 @@ add_library(icp_cuda STATIC icp_cuda.cu)
 set_property(TARGET icp_cuda PROPERTY CUDA_ARCHITECTURES 75)       
 
 add_executable(registration_demo  main_demo.cpp)
+add_executable(test  yzy_io.cpp)
 target_link_libraries(registration_demo
                     icp data_io icp_cuda -lcublas -lcusolver)
-
+target_link_libraries(test
+                    icp data_io icp_cuda -lcublas -lcusolver)
 
 add_executable(registration  main_registration.cpp)
+
 target_link_libraries(registration
                     icp data_io icp_cuda -lcublas -lcusolver)
 
